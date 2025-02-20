@@ -1,4 +1,4 @@
-# csCatch2
+# csEigen
 a wrapper over eigen library to easy manage with cmake presets
 
 ## How to Build
