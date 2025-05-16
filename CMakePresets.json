@@ -1,5 +1,5 @@
 {
-  "version":  10,
+  "version": 10,
   "include": [
     "${sourceParentDir}/csCMake/presets/msvc2022-x64-workflow-release.json",
     "${sourceParentDir}/csCMake/presets/msvc2022-x64-LLVM-workflow-release.json",
