@@ -2,6 +2,8 @@
   "version": 10,
   "include": [
     "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninja-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninjamulticonfig-ALL.json"
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninjamulticonfig-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-clang-ninja-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-clang-ninjamulticonfig-ALL.json"
   ]
 }
