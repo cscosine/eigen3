@@ -1,0 +1,25 @@
+{
+    "version": 10,
+    "include": ["${sourceParentDir}/csCMake/presets/csCMakeProjectSetup.json"],
+    "configurePresets": [
+        {
+            "name": "cscmake-project-setup",
+            "hidden": true,
+            "$comment": "the sibling layout, and the Eigen top level defaults turned off: tests, BLAS, LAPACK, demos (the package: the headers, Eigen3Config.cmake, eigen3.pc)",
+            "inherits": "cscmake-common-project-setup",
+            "environment": {
+                "CSCMAKE_WORKSPACE_ROOT": "${sourceParentDir}",
+                "CSCMAKE_ROOT": "$env{CSCMAKE_WORKSPACE_ROOT}/csCMake",
+                "CSCMAKE_BUILD_SUB_DIR": "$env{CSCMAKE_CSV1_SUB_DIR}"
+            },
+            "cacheVariables": {
+                "BUILD_TESTING": "OFF",
+                "EIGEN_BUILD_TESTING": "OFF",
+                "EIGEN_BUILD_BLAS": "OFF",
+                "EIGEN_BUILD_LAPACK": "OFF",
+                "EIGEN_BUILD_DEMOS": "OFF",
+                "EIGEN_BUILD_DOC": "OFF"
+            }
+        }
+    ]
+}
